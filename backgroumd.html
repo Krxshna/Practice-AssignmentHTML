@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+    <style>
+        div{
+            background-color:cyan;
+        }
+        div:nth-child(2){
+            background-image: url("gettyimages-1148091793-612x612.jpg");
+        }
+        #message{
+            visibility: hidden;
+            border:2px solid darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam tempore, quibusdam nemo voluptate laboriosam maxime quae ipsum dignissimos. Culpa facilis at repudiandae expedita laudantium sunt saepe quos magni distinctio nulla.
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minus modi explicabo nobis aperiam, blanditiis asperiores rem, quaerat corrupti excepturi mollitia, debitis inventore voluptas officia saepe? Neque iste tenetur suscipit.
+    </div>
+    <a href="www.google.com" id="message">Google page</a>
+    <a href="www.google.com">google page</a>
+    <script>
+        setTimeout(function(){
+          document.getElementById('message').style.visibility=
+          'visible';
+          }, 5000);
+    </script>
+</body>
+</html>
